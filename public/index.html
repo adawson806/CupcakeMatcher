@@ -14,26 +14,21 @@
 
     <hr>
 
+    <!-- Flavor Profiler Quiz -->
     <div class="selectors">
       <div class="selector">
         <p class="prompt">✨ Choose a cake base ✨</p>
-        <div class="button-group" id="base-group">
-          <!-- Buttons created by JS -->
-        </div>
+        <div class="button-group" id="base-group"></div>
       </div>
 
       <div class="selector">
         <p class="prompt">🍥 Choose an icing</p>
-        <div class="button-group" id="icing-group">
-          <!-- Buttons created by JS -->
-        </div>
+        <div class="button-group" id="icing-group"></div>
       </div>
 
       <div class="selector">
         <p class="prompt">🍒 Choose a topping/accent</p>
-        <div class="button-group" id="topping-group">
-          <!-- Buttons created by JS -->
-        </div>
+        <div class="button-group" id="topping-group"></div>
       </div>
     </div>
 
@@ -45,9 +40,26 @@
 
     <hr>
 
-    <div id="results">
-      <!-- Results rendered by JS -->
+    <!-- Basic Search -->
+    <div class="search-section">
+      <p class="prompt">🔍 Search cupcakes</p>
+      <input type="text" id="search-input" placeholder="e.g. chocolate, almond">
+      <button id="search-btn">Search</button>
     </div>
+
+    <hr>
+
+    <!-- Recipe Suggestion -->
+    <div class="recipe-section">
+      <p class="prompt">🥣 Recipe Suggestion</p>
+      <input type="text" id="pantry-input" placeholder="Enter ingredients, comma separated">
+      <button id="recipe-btn">Suggest Recipes</button>
+    </div>
+
+    <hr>
+
+    <!-- Results -->
+    <div id="results"></div>
   </div>
 
   <script src="app.js"></script>
