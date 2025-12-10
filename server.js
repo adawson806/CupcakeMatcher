@@ -293,6 +293,3 @@ app.post('/api/recipes/suggest', async (req, res) => {
       HAVING COUNT(DISTINCT i.iname) = ?
     `, [...ingredients, ingredients.length]);
 
-    res.json({ pantry: ingredients, possibleCupcakes: rows });
-  } catch (err) {
-    res.status(500).json
